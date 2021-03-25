@@ -6,7 +6,7 @@ describe('lg-input', () => {
     const wrapper = mount(input)
     expect(wrapper.html()).toContain('input type="text"')
   })
-  
+
   test('input-password', () => {
     const wrapper = mount(input, {
       propsData: {
@@ -29,7 +29,7 @@ describe('lg-input', () => {
   test('input-snapshot', () => {
     const wrapper = mount(input, {
       propsData: {
-        type: 'text',
+        type: 'password',
         value: 'admin'
       }
     })
